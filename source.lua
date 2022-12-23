@@ -9,7 +9,7 @@ local UICorner_2 = Instance.new("UICorner")
 --Properties:
 
 Skinnerv1.Name = "Skinner v1"
-Skinnerv1.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Skinnerv1.Parent = game:GetService("CoreGui")
 Skinnerv1.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 BackGround.Name = "BackGround"
@@ -19,7 +19,7 @@ BackGround.BackgroundColor3 = Color3.fromRGB(222, 255, 6)
 BackGround.Position = UDim2.new(0.590927601, 0, 0.282369167, 0)
 BackGround.Selectable = true
 BackGround.Size = UDim2.new(0, 307, 0, 253)
-
+BackGround.ZIndex = 2
 UICorner.Parent = BackGround
 
 name.Name = "name"
